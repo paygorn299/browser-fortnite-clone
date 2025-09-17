@@ -1,0 +1,15 @@
+{
+  "name": "browser-fortnite-clone",
+  "version": "0.1.0",
+  "description": "A prototype browser-based Fortnite-style battle royale game.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "three": "^0.155.0"
+  },
+  "devDependencies": {
+    "serve": "^14.0.1"
+  }
+}
