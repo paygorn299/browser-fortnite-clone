@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser Battle Royale (Fortnite-like)</title>
+  <style>
+    html, body, #game-canvas { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #202844; }
+    #ui { position: absolute; z-index: 2; top: 0; left: 0; width: 100%; color: #fff; font-family: Arial, sans-serif; pointer-events: none; }
+    #menu { position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); padding: 10px; border-radius: 8px; pointer-events: auto; }
+    #emote-btn { pointer-events: auto; }
+  </style>
+</head>
+<body>
+  <div id="ui">
+    <div id="menu">
+      <button onclick="window.setMode(100)">100 Bot Royale</button>
+      <button onclick="window.setMode(30)">30 Bot Royale</button>
+      <button onclick="window.setMode('free')">Free Play</button>
+      <button id="emote-btn" onclick="window.doEmote()">Emote</button>
+      <span id="info"></span>
+    </div>
+  </div>
+  <canvas id="game-canvas"></canvas>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
